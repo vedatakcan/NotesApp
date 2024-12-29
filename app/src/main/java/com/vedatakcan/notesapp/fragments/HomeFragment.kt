@@ -8,22 +8,18 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.SearchView
+import androidx.appcompat.widget.SearchView
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
 import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleOwner
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import androidx.room.Query
 import com.vedatakcan.notesapp.MainActivity
 import com.vedatakcan.notesapp.R
 import com.vedatakcan.notesapp.adapter.NoteAdapter
 import com.vedatakcan.notesapp.databinding.FragmentHomeBinding
 import com.vedatakcan.notesapp.model.Note
 import com.vedatakcan.notesapp.viewmodel.NoteViewModel
-
 
 class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextListener, MenuProvider {
 

@@ -36,7 +36,8 @@
             app:destination="@id/homeFragment" />
         <argument
             android:name="note"
-            app:argType="com.vedatakcan.notesapp.model.Note" />
+            app:argType="com.vedatakcan.notesapp.model.Note"
+            app:nullable="true" />
     </fragment>
 
 </navigation>
